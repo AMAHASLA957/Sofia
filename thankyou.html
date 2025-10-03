@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Спасибо!</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+body{display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(135deg,#f6d365,#fda085,#fbc2eb,#a18cd1);background-size:200% 200%;animation:gradientMove 10s ease infinite;color:#fff;text-align:center;padding:20px;}
+h1{font-size:2.5rem;text-shadow:2px 2px 8px rgba(0,0,0,0.3);animation:textGlow 2s infinite;}
+p{margin-top:20px;font-size:1.2rem;animation:textBounce 2s infinite;}
+a.button{display:inline-block;margin-top:30px;padding:15px 30px;border-radius:15px;background:linear-gradient(90deg,#ff7e5f,#feb47b,#ff7e5f);color:white;text-decoration:none;font-weight:bold;font-size:16px;transition:all 0.3s ease,box-shadow 0.3s ease;animation:pulse 2s infinite;}
+a.button:hover{transform:scale(1.05) translateY(-3px);box-shadow:0 10px 30px rgba(255,126,95,0.5),0 0 20px rgba(254,180,123,0.3);}
+@keyframes gradientMove{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+@keyframes textGlow{0%,100%{text-shadow:0 0 10px rgba(255,255,255,0.7),0 0 20px rgba(255,126,95,0.5);}50%{text-shadow:0 0 20px rgba(255,255,255,1),0 0 40px rgba(254,180,123,0.7);}}
+@keyframes textBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+@media(max-width:768px){h1{font-size:2rem;}p{font-size:1rem;}a.button{font-size:15px;padding:12px 25px;}}
+@media(max-width:480px){h1{font-size:1.6rem;}p{font-size:0.9rem;}a.button{font-size:14px;padding:10px 20px;}}
+</style>
+</head>
+<body>
+    <div>
+        <h1>Спасибо!</h1>
+        <p>Ваша заявка успешно отправлена.</p>
+        <a href="index.html" class="button">Вернуться на главную</a>
+    </div>
+</body>
+</html>

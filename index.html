@@ -9,27 +9,28 @@
 <body>
     <div class="container">
         <h1>Оставьте заявку</h1>
-        <form id="requestForm">
-            <div class="input-group">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="name">Ваше имя</label>
-                <i></i>
-            </div>
-            <div class="input-group">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Email</label>
-                <i></i>
-            </div>
-            <div class="input-group">
-                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-                <label for="message">Сообщение</label>
-                <i></i>
-            </div>
-            <button type="submit"><span>Отправить заявку</span></button>
-            <p class="success-message">Ваша заявка успешно отправлена!</p>
-        </form>
+        <form id="requestForm" action="https://formsubmit.co/kryzanovskapsy@gmail.com" method="POST">
+    <div class="input-group">
+        <input type="text" name="name" required placeholder=" ">
+        <label for="name">Ваше имя</label>
+        <i></i>
+    </div>
+    <div class="input-group">
+        <input type="email" name="email" required placeholder=" ">
+        <label for="email">Email</label>
+        <i></i>
+    </div>
+    <div class="input-group">
+        <textarea name="message" rows="4" required placeholder=" "></textarea>
+        <label for="message">Сообщение</label>
+        <i></i>
+    </div>
+    <!-- Дополнительно скрытые поля для Formsubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="thankyou.html" value="https://USERNAME.github.io/REPO_NAME/thankyou.html">
+    <button type="submit"><span>Отправить заявку</span></button>
+</form>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
