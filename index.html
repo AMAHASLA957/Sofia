@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Оставьте заявку</h1>
-        <form id="requestForm" action="https://formsubmit.co/kryzanovskapsy@gmail.com" method="POST">
+        <h1>Залишай заяку</h1>
+       <form id="requestForm" action="https://formspree.io/f/xjkarzon" method="POST">
     <div class="input-group">
         <input type="text" name="name" required placeholder=" ">
-        <label for="name">Ваше имя</label>
+        <label for="name">Ім'я</label>
         <i></i>
     </div>
     <div class="input-group">
@@ -22,13 +22,15 @@
     </div>
     <div class="input-group">
         <textarea name="message" rows="4" required placeholder=" "></textarea>
-        <label for="message">Сообщение</label>
+        <label for="message">Додаткова інформація</label>
         <i></i>
     </div>
-    <!-- Дополнительно скрытые поля для Formsubmit -->
+
+    <!-- Скрытые поля Formspree -->
+    <input type="hidden" name="thankyou.html" value="thankyou.html">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="thankyou.html" value="https://USERNAME.github.io/REPO_NAME/thankyou.html">
-    <button type="submit"><span>Отправить заявку</span></button>
+
+    <button type="submit"><span>Відправити</span></button>
 </form>
     </div>
 
